@@ -3,10 +3,9 @@ name: First Workflow
 on: push
 
 jobs:
-  my_first_job
-    name: First Job
+  my_first_job:
+    name: "First Job"
     runs-on: ubuntu-latest
-
     steps:
       - name: Step 1
         uses: actions/checkout@v4
@@ -16,4 +15,3 @@ jobs:
           python-version: 3.12
       - name: Step 3
         run: python --version
-        
